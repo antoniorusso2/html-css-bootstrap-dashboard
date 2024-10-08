@@ -1,4 +1,6 @@
 .my_icon{
+  padding: 0;
+  margin: 0;
   display: inline-block;
   border: none;
   text-decoration: none;
