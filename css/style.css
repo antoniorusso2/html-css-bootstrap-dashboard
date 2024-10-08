@@ -1,0 +1,16 @@
+.my_icon{
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background:none;
+}
+.my_icon .fa-solid{
+  border: 1px solid #000000;
+  padding: 0.4rem;
+  border-radius: 15%;
+  opacity: 0.5;
+}
+
+.my_icon .fa-solid:hover{
+  opacity: 1;
+}
