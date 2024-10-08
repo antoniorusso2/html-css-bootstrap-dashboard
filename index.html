@@ -11,9 +11,39 @@
 </head>
 <body>
   <header>
-    <!-- navbar with logo and menu -->
-    <nav>
 
+    <!-- navbar with logo and menu -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+
+        <!-- logo -- width and height inline -->
+        <a class="navbar-brand" href="#">
+          <img src="./img/duck.png" width="80" height="80" alt="brand logo">
+        </a>
+
+        <!-- hamburger button showing on sm and md devices -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- link list -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anagrafica utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storico prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
