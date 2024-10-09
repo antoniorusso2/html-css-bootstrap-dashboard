@@ -49,6 +49,66 @@
     </nav>
   </header>
   <main>
+    <div class="container-md">
+      <div class="my-4">
+        <h1 class="">
+          Nuovo Libro
+        </h1>
+      </div>
+      
+      <!-- form -->
+      <form class="row g-3">
+        <!-- required -->
+        <div class="col-6">
+          <label for="author-first-name" class="form-label">Nome Autore</label>
+          <input name="author-first-name" type="text" class="form-control" id="author-first-name" placeholder="Inserisci il nome dell'autore" minlength="3">
+        </div>
+        <!-- required -->
+        <div class="col-6">
+          <label for="author-last-name" class="form-label">Cognome Autore</label>
+          <input name="author-last-name" type="text" class="form-control" id="author-last-name" placeholder="Inserisci il cognome" required minlength="3">
+        </div>
+        <!-- required -->
+        <div class="col-12">
+          <label for="book-title" class="form-label">Titolo</label>
+          <input name="book-title" type="text" class="form-control" id="book-title" placeholder="Inserisci il titolo del libro" required minlength="3">
+        </div>
+        <div class="col-lg-4">
+          <label for="book-genre" class="form-label">Genere</label>
+          <select name="book-genre" class="form-select">
+            <option selected>Scegli il genere</option>
+            <option value="1">Romanzo</option>
+            <option value="2">Giallo</option>
+            <option value="3">Thriller</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <label for="publish-date" class="form-label">Anno di pubblicazione</label>
+          <input name="publish-date" type="date" class="form-control" id="publish-date">
+        </div>
+        <div class="col-lg-4">
+          <label for="isbn-code" class="form-label">ISBN#</label>
+          <input name="isbn-code" type="text" class="form-control" id="isbn-code" placeholder="Inserisci il codice ISBN#" minlength="16" maxlength="16">
+        </div>
+        <div class="col-12">
+          <hr class="mt-4">
+        </div>
+        <div class="col-12">
+          <label for="notes" class="form-label">Note</label>
+          <textarea name="notes" type="text-area" class="form-control my_height" id="book-title" placeholder="Inserisci eventuali note sul libro" maxlength="500"></textarea>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input name="digital-available" type="checkbox" class="form-check-input" id="digital-available">
+            <label class="form-check-label" for="digital-available">Disponibile anche in digitale</label>
+          </div>
+        </div>
+        <!-- form submit -->
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+        </div>
+      </form>
+    </div>
 
 
   
